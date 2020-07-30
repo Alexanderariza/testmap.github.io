@@ -1,3 +1,17 @@
-<map is="web-map" zoom="3" lat="0" lon="0" width="800" height="400" controls>
-    <layer- src="https://geogratis.gc.ca/mapml/en/osmtile/osm/" label="OpenStreetMap" checked></layer->
-</map>
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Web Map Template - default style</title>
+     <meta charset="utf-8" />
+     <script type="module" src="https://geogratis.gc.ca/mapml/client/web-map/mm-app.js" crossorigin></script>
+     <style>html {height:100%} * {margin:0px;padding:0px} body,mm-app {height:inherit}</style>
+   </head>
+   <body>
+      <mm-app projection="OSMTILE" zoom="0" lat="0.0" lon="0.0" controls>
+          
+          <layer- label="OpenStreetMap" src="https://geogratis.gc.ca/mapml/en/osmtile/osm/" checked hidden></layer-> 
+          <layer- label="OpenStreetMap" src="https://geogratis.gc.ca/mapml/en/osmtile/osm/" checked></layer->
+      </mm-app>
+   </body>
+</html>
+         
